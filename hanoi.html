@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/hanoi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <title>Hanoi</title>
+</head>
+<body>
+    <header>
+        <div class="unbordered">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-top">
+                        <div class="col-auto">
+                            <a class="header-contact" href="">+84 987 246 600 (Whatsapp)</a>
+                            <a class="header-contact" href="">info@vietnamtours.com</a>
+                        </div>
+                    </div>
+                    <div class="row header-bottom">
+                        <a href="./search.html" class="btn-toggler-search"><span class="fa fa-search"></span></a>
+                        <div class="col-auto">
+                            <a class="logo active" href="./index.html">
+                                <svg class="icon-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.812 32"><path fill="#a50b6b" d="M436.909,63.006s-0.972,1.8-2.335,4.424a29.384,29.384,0,0,1,4.231-.719c-1.7.455-3.233,0.941-4.6,1.438-0.364.705-.751,1.459-1.15,2.245a33.406,33.406,0,0,1,7.052-1.5,49.34,49.34,0,0,0-7.644,2.672c-0.387.77-.782,1.562-1.175,2.361a35.49,35.49,0,0,1,10.31-2.712,41.893,41.893,0,0,0-11.2,4.547c-0.381.791-.754,1.58-1.113,2.353A42.158,42.158,0,0,1,442.944,73.4c-8.874,2.765-13.15,5.927-15.021,7.737-0.382.888-.716,1.713-1,2.469a15.994,15.994,0,1,1,29.9-9.85C451.332,69.911,436.909,63.006,436.909,63.006Zm4.019,14.122c7.749-2.755,14.652-3.2,15.417-1s-5.064,5.9-12.813,8.654c-6.151,2.187-11.65,3.117-14.045,2.308a16,16,0,0,1-1.262-1.49C428.35,83.33,433.735,79.685,440.928,77.128Zm3.166,9.064c5.37-1.909,9.867-4.335,12.47-6.534a15.966,15.966,0,0,1-24.915,9.308A46.016,46.016,0,0,0,444.094,86.191Z" transform="translate(-425 -60)"></path></svg>
+                                <svg class="text-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.312 13.938"><path fill="#333" fill-rule="evenodd" d="M465,68.4L469.952,81h2.934l5.006-12.6h-2.935L471.5,77.9,468.061,68.4H465Zm15.787-1.224a1.387,1.387,0,1,0,1.35,1.387A1.315,1.315,0,0,0,480.787,67.172ZM479.4,71.313V81h2.773V71.313H479.4Zm10.136,7.634a2.422,2.422,0,0,1-2.305-1.495l6.7-1.764a4.393,4.393,0,0,0-4.771-4.465,4.692,4.692,0,0,0-4.97,4.951c0,2.953,2.071,4.933,5.15,4.933a5.487,5.487,0,0,0,4.357-1.98l-1.584-1.441A3.447,3.447,0,0,1,489.536,78.948ZM489.3,73.275a1.841,1.841,0,0,1,1.908,1.369L486.961,75.8C487.051,74.158,487.933,73.275,489.3,73.275Zm11.286,5.15a2.643,2.643,0,0,1-1.243.36c-0.612,0-.99-0.414-0.99-1.332V73.672H501V71.745h-2.647V69.08H495.6v8.84a2.941,2.941,0,0,0,3.1,3.205,5.113,5.113,0,0,0,2.467-.666Zm8.55-7.22a3.616,3.616,0,0,0-3.349,1.8V71.313h-2.773V81h2.773V76.229A2.243,2.243,0,0,1,508,73.744a1.8,1.8,0,0,1,1.908,1.98V81h2.773V74.914A3.391,3.391,0,0,0,509.138,71.205Zm12.906,0.108v1.4a3.675,3.675,0,0,0-3.132-1.513c-2.7.018-4.484,1.98-4.484,4.916,0,2.989,1.819,4.987,4.574,4.987a3.584,3.584,0,0,0,3.042-1.494V81H524.8V71.313h-2.755Zm-2.394,7.562a2.694,2.694,0,0,1,0-5.366,2.407,2.407,0,0,1,2.394,2.359v0.648A2.407,2.407,0,0,1,519.65,78.875Zm20.828-7.67a3.541,3.541,0,0,0-3.493,2.233,3.219,3.219,0,0,0-3.277-2.233,3.578,3.578,0,0,0-3.277,1.783V71.313h-2.773V81h2.773V76.211a2.218,2.218,0,0,1,2.161-2.467,1.776,1.776,0,0,1,1.854,1.98V81H537.2V76.211a2.215,2.215,0,0,1,2.143-2.467,1.781,1.781,0,0,1,1.872,1.98V81h2.755V74.914C543.971,72.646,542.621,71.205,540.478,71.205Zm7.214-2.809v2.412h3.835V81h2.845V70.809h3.853V68.4H547.692Zm16.562,2.827c-3.115,0-5.2,1.962-5.2,4.934,0,2.952,2.089,4.951,5.2,4.951,3.1,0,5.185-2,5.185-4.951C569.439,73.185,567.351,71.223,564.254,71.223Zm0,2.3a2.676,2.676,0,1,1-2.431,2.665A2.428,2.428,0,0,1,564.254,73.528ZM577.9,71.313V76.1a2.215,2.215,0,0,1-2.142,2.467,1.753,1.753,0,0,1-1.819-1.963V71.313h-2.773V77.4c0,2.287,1.351,3.709,3.493,3.709A3.434,3.434,0,0,0,577.9,79.29V81h2.755V71.313H577.9Zm8.387,1.746V71.313h-2.773V81h2.773V76.337c0-1.639,1.225-2.7,3.205-2.521V71.205A3.525,3.525,0,0,0,586.285,73.06Zm11,1.1,0.954-1.89a7.221,7.221,0,0,0-3.781-1.081c-2.106,0-3.817,1.027-3.817,3.025,0,3.4,5.024,2.575,5.024,4.123,0,0.522-.522.756-1.225,0.756a5.842,5.842,0,0,1-3.367-1.207l-0.9,1.873a6.764,6.764,0,0,0,4.195,1.35c2.2,0,3.944-1.044,3.944-3.025,0.017-3.421-5.1-2.683-5.1-4.141,0-.5.468-0.72,1.116-0.72A6.544,6.544,0,0,1,597.284,74.158Z" transform="translate(-465 -67.188)"></path></svg>
+                            </a>
+                        </div>
+                        <div class="col-auto dropdown-links">
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        DESTINATIONS
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./hanoi.html" >Hanoi</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Halong Bay</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Nha Trang</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Ho Chi Minh City</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Da Nang</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Phu Quoc</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Hoi An</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./destinations.html" >View all</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        TRAVEL STYLES
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./beachescapes.html" >Beach Escapes</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Classic Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Family Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Luxury Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Day Trips</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Multi-Country Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Short Tours - Northern</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Short Tours - Central</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Short Tours - Southern</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Mekong Delta Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./destinations.html" >View all</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        CRUISES
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./halongbay.html" >Halong Bay Cruises</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Mekong River Cruises</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./destinations.html" >View all</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        <a href="./insider-guide.html" class="hovering">INSIDER GUIDE</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        MORE
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./Suggested.html" >Suggested Itineraries</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./promises.html" >Who We Are</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./contact.html" >Contact Us</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./customize-tours.html" >Tailor-made tours</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto header-search">
+                            <a href="./my_try.html" class="label-search">My Trips</a>
+                            <form action="" class="form-header-search">
+                                <input type="text" name="trips" id="header-input-search " placeholder="Search" class="input-search">
+                                <a href="" class="btn-search" id="header-btn-search" >
+                                    <span class="fas fa-search"></span>
+                                </a>
+                            </form>
+                        </div>
+                        <div class="btn-toggler-menu">
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="holder-offcanvas">
+                    <div class="offcanvas">
+                        <ul class="holder-accordion">
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    destinations
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Hanoi</a></li>
+                                    <li><a href="" class="link-accordion">Halong Bay</a></li>
+                                    <li><a href="" class="link-accordion">Nha Trang</a></li>
+                                    <li><a href="" class="link-accordion">Ho Chi Minh City</a></li>
+                                    <li><a href="" class="link-accordion">Da Nang</a></li>
+                                    <li><a href="" class="link-accordion">Phu Quoc</a></li>
+                                    <li><a href="" class="link-accordion">Hoi An</a></li>
+                                    <li><a href="" class="link-accordion">View all</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    travel styles
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Beach Escapes</a></li>
+                                    <li><a href="" class="link-accordion">Classic Tours/a></li>
+                                    <li><a href="" class="link-accordion">Family Tours</a></li>
+                                    <li><a href="" class="link-accordion">Luxury Tours</a></li>
+                                    <li><a href="" class="link-accordion">Day Trips</a></li>
+                                    <li><a href="" class="link-accordion">Multi-Country Tours</a></li>
+                                    <li><a href="" class="link-accordion">Short Tours - Northern</a></li>
+                                    <li><a href="" class="link-accordion">Short Tours - Central</a></li>
+                                    <li><a href="" class="link-accordion">Short Tours - Southern</a></li>
+                                    <li><a href="" class="link-accordion">Mekong Delta Tours</a></li>
+                                    <li><a href="" class="link-accordion">View All</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    cruises
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Halong Bay Cruises</a></li>
+                                    <li><a href="" class="link-accordion">Mekong River Cruises</a></li>
+                                    <li><a href="" class="link-accordion">View all</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <a href="">insider guide</a>
+                            </li>
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    more
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Suggested Itineraries</a></li>
+                                    <li><a href="" class="link-accordion">Who We Are</a></li>
+                                    <li><a href="" class="link-accordion">Contact Us</a></li>
+                                    <li><a href="" class="link-accordion">Tailor-made tours</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="" class="header-contact"></a>
+                        <a href="" class="header-contact">+84 987 246 600 (Whatsapp)</a>
+                        <a href="" class="header-contact">info@vietnamtours.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="destination-details">
+            <div>
+                <div class="section-banner">
+                    <div class="container">
+                        <div class="banner-content">
+                            <p class="banner-subheading text-shadow">Vietnam</p>
+                            <h1 class="banner-heading text-shadow">Hanoi</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-details-info">
+                    <div class="container">
+                        <h2 class="section-heading">
+                            Welcome To Hanoi
+                        </h2>
+                        <div class="section-description">
+                            <p>The capital and political hub of Vietnam, Hanoi has grown around the shell of the used-to-be French colonial reign, both structurally and culturally, gracefully. With new and modern architects being built on top of old French buildings and public structures and the impressive variety of food heavily inspired from both cultures, Vietnamese and French, Hanoi is guaranteed to have everything for everyone.</p>
+                            <h2 class="item" style="display:none">Highlights</h2>
+                            <p class="item" style="display:none">Enjoy a hot bowl of porridge outside of Dong Xuan market, after shopping for random items and souvenirs.</p>
+                            <ul class="item" style="display:none">
+                                <li>Go on a pub crawl along the Old Quarters</li>
+                                <li>Trying out all the crowded street food shops</li>
+                                <li>Have a jog near the Ho Chi Minh Mausoleum</li>
+                            </ul>
+                            <h2 class="item" style="display:none">Getting Around</h2>
+                            <p class="item" style="display:none">Over the past few years, getting around Hanoi has never been easier. Grab and Uber has been on the rise in popularity, much to tourist’s rejoice (although the two have now been merged into one under the name of Grab). No more the fear of motorcycle taxi’s scamming those unaware, or sketchy taxi’s giving you a roundabout ride around Hanoi before dropping you off, the ride sharing app allows you to go to and from the Old Quarters to anywhere else within Hanoi with only $4 or lower when using Grab Car, and with only around $2, you can go to anywhere Grab Bike (motor taxi). One should note to avoid rush hours, such as 8AM or 4-5PM, where the demand for the service drastically increases, causing the price to hike up by at least 2x and going from destinations to destinations at those times might not be the most comfortable experience.</p>
+                            <p class="item" style="display:none">Another alternative, is to rent out a motorbike. Most hostels in the Old Quarter offer these services, with the price of around $7-$10 a day. There are also car rental locations for those who are looking for one, but it is not advisable nor legal so it is best not to dwell on that option.</p>
+                            <p class="item" style="display:none">Other options such as traditional taxi or motorbike taxi is also there for you to choose. Just make sure to look for reliable taxi brands such as Mai Linh, Thanh Nga, Open99 to avoid possible scamming. Motorbike taxi only be considered if all other options are unavailable and even then, beware and always use the ride sharing apps prices as reference when negotiating prices. </p>
+                            <h2 class="item" style="display:none">City Layout</h2>
+                            <p class="item" style="display:none">Hanoi consists of 12 urban district, but more than likely, the 4 districts that you will be frequenting will be: Hoan Kiem, Ba Dinh, Dong Da, Hai Ba Trung.</p>
+                            <ul class="item" style="display:none">
+                                <li>Hoan Kiem: The commercial center of Hanoi, Hoan Kiem is one of the most frequent district for both locals and expats alike. Famous for the Old Quarters, where activities never stops until 4AM the next day and the cycle continues as early as 8AM. Home to a vibrant and thriving nightlife, a wide array of sightseeing options and food variety, Hoan Kiem is a must-go when it comes to entertainment.</li>
+                                <li>Ba Dinh: Ba Dinh is the political hub of Hanoi, with most of the government offices and embassies are located within the district. Ba Dinh also has a lot of sightseeing locations and museums, 2 of the most well-knowns are the Ho Chi Minh Mausoleum and the One Pillar Pagoda allowing travelers to explore a quieter and normal Hanoi.</li>
+                                <li>Hai Ba Trung: The most populous district, Hai Ba Trung has some of the largest universities located there. With the high number of population and a considerable amount of young people, it is to be expected that the district has a huge number of street food corners and restaurants, satisfying your foodie needs.</li>
+                                <li>Dong Da: The district is the middle ground compares to the other 3, providing everything from sightseeing places, such as the Temple of Literature, to food and shopping, like the Thanh Cong market. Much like Ba Dinh, Dong Da is a place for those who would like to explore Hanoi in its normality.</li>
+                            </ul>
+                            <h2 class="item" style="display:none">Accommodation</h2>
+                            <p class="item" style="display:none">The closer you are to Hoan Kiem district, the costlier it’ll be for a night. Despite that, Hanoi offers a large array of accommodating options, ranging from luxurious and excellent 5-star hotels, to incredibly cheap hostels/service apartments. All with very reasonable prices as well, with a night at a 5-star hotel costing around $100-$150+ or as low as $7 for a night at a hostel or motel. booking.com and hotels.com are 2 of many websites that helps with advanced bookings and offers special offers that sometimes also offers discounts, cheapening the cost of staying even further. </p>
+                            <h2 class="item" style="display:none">Dining</h2>
+                            <p class="item" style="display:none">Those who arrive at Hanoi should expect to eat more than your average 3 meals per day in order to try out all food that Hanoi has to offer. It is highly recommended to visit street food stalls or small shops as you can enjoy a much more wider variety of cuisines there. Websites such as foody.vn or lozi.vn are normally frequented by locals to share their food experience from various shops and is good way to look for a place to eat. But for those who feared they might not have the same food preference as the locals, Tripadvisor works just as well, providing reviews from fellow travelers and expats.</p>
+                            <h2 class="item" style="display:none">Shopping</h2>
+                            <p class="item" style="display:none">A must-go market for anyone who intends to visit Hanoi would be Dong Xuan Market. Hanoi’s largest indoor market, but not stopping only there, the outside of the market is also surrounded with booths selling all-kinds of textiles/fabrics. It is also located North of the Old Quarter, giving you the option to enjoy the night life right after or go one a street food eating spree.</p>
+                            <p class="item" style="display:none">Another highly recommended shopping place is the Hanoi Weekend Night Market, located in the Old Quarter, not far from Dong Xuan market. Specialize in handicrafts and accessories, the Night Market is a good place for those who are still looking for souvenirs to bring back home, and itself being only a few blocks away from Dong Xuan market means that there is absolutely no reason for one not to go see both.</p>
+                            <p class="item" style="display:none">Shopping Malls are also very common throughout Hanoi, satisfying your brand goods shopping needs. Some of the few notable malls are Vincom Ba Trieu, Lotte and Royal City.</p>
+                            <h2 class="item" style="display:none">Travel tips</h2>
+                            <p class="item" style="display:none">Phone and internet: Tourist Simcards are available for all mobile carriers with varying offers. Tourist Sims are generally okay-ish in value for those who intends to make regular calls, costing around $15-$20 a month or about $4.50 for a week. But the Sim itself only offers limited amount of Data, and some might see the included call time to be unnecessary. For the best value, I recommend using VietnamMobile’s unlimited 3G Simcard, costing you a fixed $5 and an extra $3 per month to maintain an unlimited, unthrottled internet access. (prepaid-data-sim-card.wikia.com/wiki/Vietnam) webpage offers a comprehensive and detail guide about what type of Sim each carriers provide and how to access and unlock those options.</p>
+                            <p class="item" style="display:none">Money: Credit cards are slowly getting popular use in Hanoi, with many if not most restaurant accepting plastic as an option of payment. But despite that, cash is still much needed when going around the city, as ride-sharing app drivers does not accept credit card as an option and you can’t expect a old lady selling food on the street to pull out a card reader anytime in the near future.</p>
+
+                        </div>
+                        <span class="show-more" onclick="toggleContent()">show more</span>
+                    </div>
+                </div>
+                <div class="section-destination-articles">
+                    <div class="section-recent-posts">
+                        <div class="container">
+                            <h2 class="section-heading">Recent Posts </h2>
+                            <div class="row section-destination">
+                                <div class="col-sm-auto col-md-4 media">
+                                    <a href="">
+                                        <div class="media-img" style="background-image: url(./images/fall-in-hanoi.jpg);"></div>
+                                    </a>
+                                    <div class="media-details">
+                                        <h3 class="subtitle-banner">
+                                            <a href="">Best Time to Visit Hanoi</a>
+                                        </h3>
+                                        <p class="desc-light">Hanoi, the capital of Vietnam, is always given top priority for any visitors thanks to its charming and long fascinating history. As the cit...</p>
+                                        <a href="" class="read-more">
+                                            READ MORE 
+                                            <img class="read-more-arrow" src="./images/tải xuống.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto col-md-4 media">
+                                    <a href="">
+                                        <div class="media-img" style="background-image: url(./images/section-destination1.jpg);"></div>
+                                    </a>
+                                    <div class="media-details">
+                                        <h3 class="subtitle-banner">
+                                            <a href="">Nightlife in Hanoi - The 5 best pubs and bars in Hanoi</a>
+                                        </h3>
+                                        <p class="desc-light">Sometimes, we all need a taste of back home. From the more traditional to the downright strange, here’s our list of the five best pubs Hanoi...</p>
+                                        <a href="" class="read-more">
+                                            READ MORE 
+                                            <img class="read-more-arrow" src="./images/tải xuống.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto col-md-4 media">
+                                    <a href="">
+                                        <div class="media-img" style="background-image: url(./images/section-destination2.jpg);"></div>
+                                    </a>
+                                    <div class="media-details">
+                                        <h3 class="subtitle-banner">
+                                            <a href="">10 Great Places to Go Shopping in Hanoi</a>
+                                        </h3>
+                                        <p class="desc-light">Shopping in Vietnam’s capital can be confusing. Hanoi’s Old Quarter’s labyrinthian streets unfold like a complex maze, and it can be impossi...</p>
+                                        <a href="" class="read-more">
+                                            READ MORE 
+                                            <img class="read-more-arrow" src="./images/tải xuống.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto col-md-4 media">
+                                    <a href="">
+                                        <div class="media-img" style="background-image: url(./images/section-destination3.jpg);"></div>
+                                    </a>
+                                    <div class="media-details">
+                                        <h3 class="subtitle-banner">
+                                            <a href="">9 Must-try Authentic Local Foods to Eat in Hanoi</a>
+                                        </h3>
+                                        <p class="desc-light">Hanoi is the hectic, heady and haphazard capital of Vietnam. It can be a daunting place – crossing the road can take significantly longer th...</p>
+                                        <a href="" class="read-more">
+                                            READ MORE 
+                                            <img class="read-more-arrow" src="./images/tải xuống.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto col-md-4 media">
+                                    <a href="">
+                                        <div class="media-img" style="background-image: url(./images/section-destination4.jpg);"></div>
+                                    </a>
+                                    <div class="media-details">
+                                        <h3 class="subtitle-banner">
+                                            <a href="">Hanoi Day Trips: 9 Ideas to Make the Most of a Day from Hanoi</a>
+                                        </h3>
+                                        <p class="desc-light">Whilst one could easily spend an eternity in Vietnam’s crowded capital without getting bored, there are myriad easily-missed day trips to sa...</p>
+                                        <a href="" class="read-more">
+                                            READ MORE 
+                                            <img class="read-more-arrow" src="./images/tải xuống.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto col-md-4 media">
+                                    <a href="">
+                                        <div class="media-img" style="background-image: url(./images/section-destination5.jpg);"></div>
+                                    </a>
+                                    <div class="media-details">
+                                        <h3 class="subtitle-banner">
+                                            <a href="">Top 11 Hanoi Attractions</a>
+                                        </h3>
+                                        <p class="desc-light">Hanoi, the capital of Vietnam, brings visitors a feel of both traditional and modern, the result of centuries of foreign influences intertwi...</p>
+                                        <a href="" class="read-more">
+                                            READ MORE 
+                                            <img class="read-more-arrow" src="./images/tải xuống.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto col-md-4 media currents" style="display:none">
+                                    <a href="">
+                                        <div class="media-img" style="background-image: url(./images/section-destination6.jpg);"></div>
+                                    </a>
+                                    <div class="media-details">
+                                        <h3 class="subtitle-banner">
+                                            <a href="">11 Best Restaurants In Hanoi For Every Taste And Budget</a>
+                                        </h3>
+                                        <p class="desc-light">Hanoi is full of culinary traditions with the influence of Chinese, Japanese and French besides the already rich history of Vietnamese gastr...</p>
+                                        <a href="" class="read-more">
+                                            READ MORE 
+                                            <img class="read-more-arrow" src="./images/tải xuống.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-default show-more-2"  onclick="destination()">show more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-tour">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="title">Suggested Tour Packages</h2>
+                                <div class="react-tabs">
+                                    <div class="holder-panels">
+                                        <div class="row holder-media react-tabs__tab-panel--selected" id="react-tabs-6" >
+                                            <div class="col-sm-auto col-md-4 media">
+                                                <div class="media-img" style="background-image: url(./images/essentialvietnam–17d16n.jpg);">  
+                                                    <div class="add-trip">
+                                                        <span class="fas fa-heart"></span>
+                                                        <div class="media-add-trip">
+                                                            Add to my trips
+                                                            <span class="far fa-heart"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media-details content-shadowed">
+                                                    <h3 class="subtitle-banner">
+                                                        <a href="">Essential Vietnam  (17 Days / 16 Nights)
+                                                            <span class="highlight">
+                                                                from $1008pp
+                                                            </span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="date">17 Days 16 Nights</p>
+                                                    <p class="desc-light">You are uniquely given a chance to witness the fertile and lush flood plains</p>
+                                                    <a href="" class="read-more">
+                                                        BOOK THIS TOUR
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-auto col-md-4 media">
+                                                <div class="media-img" style="background-image: url(./images/vietnammust.jpg)">
+                                                    <div class="add-trip">
+                                                        <span class="fas fa-heart"></span>
+                                                        <div class="media-add-trip">
+                                                            Add to my trips
+                                                            <span class="far fa-heart"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media-details content-shadowed">
+                                                    <h3 class="subtitle-banner">
+                                                        <a href="">Vietnam Must–Sees In 12 Days
+                                                            <span class="highlight">
+                                                                from $760pp
+                                                            </span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="date">12 Days 11 Nights</p>
+                                                    <p class="desc-light">Vietnam in the eyes of all tourists is an astonishingly exotic</p>
+                                                    <a href="" class="read-more">
+                                                        BOOK THIS TOUR
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-auto col-md-4 media">
+                                                 <div class="media-img" style="background-image: url(./images/fromsiemreaptohanoi-.jpg)">
+                                                    <div class="add-trip">
+                                                        <span class="fas fa-heart"></span>
+                                                        <div class="media-add-trip">
+                                                            Add to my trips
+                                                            <span class="far fa-heart"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media-details content-shadowed">
+                                                    <h3 class="subtitle-banner">
+                                                        <a href="">From Siem Reap To Hanoi – The Essence Of Indochina (8 Days 7 Nights)
+                                                            <span class="highlight">
+                                                                from $651pp
+                                                            </span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="date">7 Days 8 Nights</p>
+                                                    <p class="desc-light">A wonderful glance of the extraordinary</p>
+                                                    <a href="" class="read-more">
+                                                        BOOK THIS TOUR
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-faq-collapse">
+                    <div class="container">
+                        <h2 class="section-heading">Frequently Asked Questions</h2>
+                        <div class="accordion accordion-flush rc-collapse" id="accordionFlushExample">
+                            <div class="accordion-item  rc-collapse-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    1. When is the best time to visit Hanoi?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">It is highly recommended you visit Hanoi during the months of October to early December. The air is cool and dry and there are not yet many tourists (compared to the peak season of late December to early January). The period after Tet holiday from March to April is also a great time to visit as there are many festivals in and around Hanoi. If you don't mind the heat, summer is otherwise a good time to be as accommodation and tour activities are considerably cheaper than in winter time.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item  rc-collapse-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    2. Is Hanoi a safe city?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Hanoi is a very safe place to be in, especially in Hanoi Old Quarter area. Here and there there can be petty crimes such as pick pocketing, so beware of your belongings. Single woman travelers have consistently rated Hanoi as one of the safest cities to travel in, with very low crime rate against tourists.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item rc-collapse-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    3. How long should you spend in Hanoi?
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">It really depends on how much time you have got. The minimum recommended duration is 3 days while you can stay as long as 3 weeks to fully enjoy the city. Although Hanoi does not seem to have a lot of things to do at first sight, one will have to dig deeper to know the must-dos. From nightly street food scenes to the hidden shopping alleys, and occasional visit to craft village, Hanoi may just well be your most special destination thus far. If you need some suggestion, contact us.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item rc-collapse-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    4. What should I buy in Hanoi?
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Hanoi is famous for its Old Quarter where each street often specialize in one single product (production and sales). Once you get here you will know exactly what you should buy. Some ideas include conical hats, handcrafted bags, silverwares... Souvenir shops that crowd Au Trieu Street, Nha Tho Street or Hang Be Street also offer more extension selection: coffee, tea, essential oils, and silk. If there is no price tag attached, it is always good to bargain.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item rc-collapse-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    5. How cold does it get in Hanoi?
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Hanoi weather often reaches a record low of 7 Celsius degree in late December or early January. However the humid wind often makes it a lot harsher than its sounds. If you plan to travel to Hanoi during this period, make sure to pack some serious sweater or jackets. In case you travel beyond Hanoi to the mountain region of Sapa, the temperature may even drop further.</div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="section-book">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 title="heading">Why book with us?</h2>
+                            <p class="desc">Vietnam Tours offer a wide range of travel options for 
+                                all travel needs: family holiday, honeymoon package, school trip or
+                                 solo travellers. We are proud to be among the leading travel 
+                                 agents in Vietnam and have been recommended extensively by both 
+                                 local and foreign visitors. </p>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="" class="btn btn-primary-outline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-links">
+                    <div class="row">
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">Destinations</h4>
+                            <ul class="footer-links">
+                                <li><a href="">Hanoi</a></li>
+                                <li><a href="">Sapa</a></li>
+                                <li><a href="">Ho Chi Minh City</a></li>
+                                <li><a href="">Hoi An</a></li>
+                                <li><a href="">Nha Trang</a></li>
+                                <li><a href="">Phu Quoc</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">Tour Styles</h4>
+                            <ul class="footer-links">
+                                <li><a href="">Classic Tours</a></li>
+                                <li><a href="">Family Tours</a></li>
+                                <li><a href="">Multi-Country Tours</a></li>
+                                <li><a href="">Luxury Tours</a></li>
+                                <li><a href="">Beach Escapes</a></li>
+                                <li><a href="">Mekong Delta Tours</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">General Information</h4>
+                            <ul class="footer-links">
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="./faq.html">FAQs</a></li>
+                                <li><a href="">Insider Guide</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">Have a Question?</h4>
+                            <div class="contact-info">
+                                <a href="" class="number">+84 987 246 600</a>
+                                <p class="time">(8.00 AM-22.00 PM, GMT +7)</p>
+                                <div class="get-quote">
+                                    <p>Our travel experts are ready to create a free customized itinerary.</p>
+                                    <a href="" class="btn-primary">GET A FREE QUOTE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="info">
+                            <p>Company: Mia Tours Company Limited . Business License: 0109891474, Date of Issue: 18/01/2022. Place of Issue: Hanoi Authority for Planning and Investment.</p>
+                            <p>Phone:  +84 987 246 600 / Fax: +84-43577-2908 </p>
+                            <p>Address: 6/34 Hao Nam, O Cho Dua, Dong Da District, Ha Noi, Viet Nam</p>
+                        </div>
+                        <p class="copyright-text">Copyright © 2023 VietnamTours.com. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="footer-logos">
+                            <li class="d-block">
+                                <img src="./images/footer1.svg" alt="">
+                            </li>
+                            <li class="d-block">
+                                <img src="./images/footer2.svg" alt="">
+                            </li>
+                            <li class="d-block">
+                                <img src="./images/footer3.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./slick/jquery-3.7.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/hanoi.js"></script>
+</body>
+</html>

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/insider-guide.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <title>INSIDER GUIDE</title>
+</head>
+<body>
+    <header>
+        <div class="unbordered">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-top">
+                        <div class="col-auto">
+                            <a class="header-contact" href="">+84 987 246 600 (Whatsapp)</a>
+                            <a class="header-contact" href="">info@vietnamtours.com</a>
+                        </div>
+                    </div>
+                    <div class="row header-bottom">
+                        <a href="./search.html" class="btn-toggler-search"><span class="fa fa-search"></span></a>
+                        <div class="col-auto">
+                            <a class="logo active" href="./index.html">
+                                <svg class="icon-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.812 32"><path fill="#a50b6b" d="M436.909,63.006s-0.972,1.8-2.335,4.424a29.384,29.384,0,0,1,4.231-.719c-1.7.455-3.233,0.941-4.6,1.438-0.364.705-.751,1.459-1.15,2.245a33.406,33.406,0,0,1,7.052-1.5,49.34,49.34,0,0,0-7.644,2.672c-0.387.77-.782,1.562-1.175,2.361a35.49,35.49,0,0,1,10.31-2.712,41.893,41.893,0,0,0-11.2,4.547c-0.381.791-.754,1.58-1.113,2.353A42.158,42.158,0,0,1,442.944,73.4c-8.874,2.765-13.15,5.927-15.021,7.737-0.382.888-.716,1.713-1,2.469a15.994,15.994,0,1,1,29.9-9.85C451.332,69.911,436.909,63.006,436.909,63.006Zm4.019,14.122c7.749-2.755,14.652-3.2,15.417-1s-5.064,5.9-12.813,8.654c-6.151,2.187-11.65,3.117-14.045,2.308a16,16,0,0,1-1.262-1.49C428.35,83.33,433.735,79.685,440.928,77.128Zm3.166,9.064c5.37-1.909,9.867-4.335,12.47-6.534a15.966,15.966,0,0,1-24.915,9.308A46.016,46.016,0,0,0,444.094,86.191Z" transform="translate(-425 -60)"></path></svg>
+                                <svg class="text-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.312 13.938"><path fill="#333" fill-rule="evenodd" d="M465,68.4L469.952,81h2.934l5.006-12.6h-2.935L471.5,77.9,468.061,68.4H465Zm15.787-1.224a1.387,1.387,0,1,0,1.35,1.387A1.315,1.315,0,0,0,480.787,67.172ZM479.4,71.313V81h2.773V71.313H479.4Zm10.136,7.634a2.422,2.422,0,0,1-2.305-1.495l6.7-1.764a4.393,4.393,0,0,0-4.771-4.465,4.692,4.692,0,0,0-4.97,4.951c0,2.953,2.071,4.933,5.15,4.933a5.487,5.487,0,0,0,4.357-1.98l-1.584-1.441A3.447,3.447,0,0,1,489.536,78.948ZM489.3,73.275a1.841,1.841,0,0,1,1.908,1.369L486.961,75.8C487.051,74.158,487.933,73.275,489.3,73.275Zm11.286,5.15a2.643,2.643,0,0,1-1.243.36c-0.612,0-.99-0.414-0.99-1.332V73.672H501V71.745h-2.647V69.08H495.6v8.84a2.941,2.941,0,0,0,3.1,3.205,5.113,5.113,0,0,0,2.467-.666Zm8.55-7.22a3.616,3.616,0,0,0-3.349,1.8V71.313h-2.773V81h2.773V76.229A2.243,2.243,0,0,1,508,73.744a1.8,1.8,0,0,1,1.908,1.98V81h2.773V74.914A3.391,3.391,0,0,0,509.138,71.205Zm12.906,0.108v1.4a3.675,3.675,0,0,0-3.132-1.513c-2.7.018-4.484,1.98-4.484,4.916,0,2.989,1.819,4.987,4.574,4.987a3.584,3.584,0,0,0,3.042-1.494V81H524.8V71.313h-2.755Zm-2.394,7.562a2.694,2.694,0,0,1,0-5.366,2.407,2.407,0,0,1,2.394,2.359v0.648A2.407,2.407,0,0,1,519.65,78.875Zm20.828-7.67a3.541,3.541,0,0,0-3.493,2.233,3.219,3.219,0,0,0-3.277-2.233,3.578,3.578,0,0,0-3.277,1.783V71.313h-2.773V81h2.773V76.211a2.218,2.218,0,0,1,2.161-2.467,1.776,1.776,0,0,1,1.854,1.98V81H537.2V76.211a2.215,2.215,0,0,1,2.143-2.467,1.781,1.781,0,0,1,1.872,1.98V81h2.755V74.914C543.971,72.646,542.621,71.205,540.478,71.205Zm7.214-2.809v2.412h3.835V81h2.845V70.809h3.853V68.4H547.692Zm16.562,2.827c-3.115,0-5.2,1.962-5.2,4.934,0,2.952,2.089,4.951,5.2,4.951,3.1,0,5.185-2,5.185-4.951C569.439,73.185,567.351,71.223,564.254,71.223Zm0,2.3a2.676,2.676,0,1,1-2.431,2.665A2.428,2.428,0,0,1,564.254,73.528ZM577.9,71.313V76.1a2.215,2.215,0,0,1-2.142,2.467,1.753,1.753,0,0,1-1.819-1.963V71.313h-2.773V77.4c0,2.287,1.351,3.709,3.493,3.709A3.434,3.434,0,0,0,577.9,79.29V81h2.755V71.313H577.9Zm8.387,1.746V71.313h-2.773V81h2.773V76.337c0-1.639,1.225-2.7,3.205-2.521V71.205A3.525,3.525,0,0,0,586.285,73.06Zm11,1.1,0.954-1.89a7.221,7.221,0,0,0-3.781-1.081c-2.106,0-3.817,1.027-3.817,3.025,0,3.4,5.024,2.575,5.024,4.123,0,0.522-.522.756-1.225,0.756a5.842,5.842,0,0,1-3.367-1.207l-0.9,1.873a6.764,6.764,0,0,0,4.195,1.35c2.2,0,3.944-1.044,3.944-3.025,0.017-3.421-5.1-2.683-5.1-4.141,0-.5.468-0.72,1.116-0.72A6.544,6.544,0,0,1,597.284,74.158Z" transform="translate(-465 -67.188)"></path></svg>
+                            </a>
+                        </div>
+                        <div class="col-auto dropdown-links">
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        DESTINATIONS
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./hanoi.html" >Hanoi</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Halong Bay</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Nha Trang</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Ho Chi Minh City</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Da Nang</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Phu Quoc</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Hoi An</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./destinations.html" >View all</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        TRAVEL STYLES
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./beachescapes.html" >Beach Escapes</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Classic Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Family Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Luxury Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Day Trips</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Multi-Country Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Short Tours - Northern</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Short Tours - Central</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Short Tours - Southern</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Mekong Delta Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./destinations.html" >View all</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        CRUISES
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./halongbay.html" >Halong Bay Cruises</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Mekong River Cruises</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./destinations.html" >View all</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        <a href="./insider-guide.html" class="hovering">INSIDER GUIDE</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        MORE
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./Suggested.html" >Suggested Itineraries</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./promises.html" >Who We Are</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./contact.html" >Contact Us</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./customize-tours.html" >Tailor-made tours</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto header-search">
+                            <a href="./my_try.html" class="label-search">My Trips</a>
+                            <form action="" class="form-header-search">
+                                <input type="text" name="trips" id="header-input-search " placeholder="Search" class="input-search">
+                                <a href="" class="btn-search" id="header-btn-search" >
+                                    <span class="fas fa-search"></span>
+                                </a>
+                            </form>
+                        </div>
+                        <div class="btn-toggler-menu">
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="holder-offcanvas">
+                    <div class="offcanvas">
+                        <ul class="holder-accordion">
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    destinations
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Hanoi</a></li>
+                                    <li><a href="" class="link-accordion">Halong Bay</a></li>
+                                    <li><a href="" class="link-accordion">Nha Trang</a></li>
+                                    <li><a href="" class="link-accordion">Ho Chi Minh City</a></li>
+                                    <li><a href="" class="link-accordion">Da Nang</a></li>
+                                    <li><a href="" class="link-accordion">Phu Quoc</a></li>
+                                    <li><a href="" class="link-accordion">Hoi An</a></li>
+                                    <li><a href="" class="link-accordion">View all</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    travel styles
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Beach Escapes</a></li>
+                                    <li><a href="" class="link-accordion">Classic Tours/a></li>
+                                    <li><a href="" class="link-accordion">Family Tours</a></li>
+                                    <li><a href="" class="link-accordion">Luxury Tours</a></li>
+                                    <li><a href="" class="link-accordion">Day Trips</a></li>
+                                    <li><a href="" class="link-accordion">Multi-Country Tours</a></li>
+                                    <li><a href="" class="link-accordion">Short Tours - Northern</a></li>
+                                    <li><a href="" class="link-accordion">Short Tours - Central</a></li>
+                                    <li><a href="" class="link-accordion">Short Tours - Southern</a></li>
+                                    <li><a href="" class="link-accordion">Mekong Delta Tours</a></li>
+                                    <li><a href="" class="link-accordion">View All</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    cruises
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Halong Bay Cruises</a></li>
+                                    <li><a href="" class="link-accordion">Mekong River Cruises</a></li>
+                                    <li><a href="" class="link-accordion">View all</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <a href="">insider guide</a>
+                            </li>
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    more
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Suggested Itineraries</a></li>
+                                    <li><a href="" class="link-accordion">Who We Are</a></li>
+                                    <li><a href="" class="link-accordion">Contact Us</a></li>
+                                    <li><a href="" class="link-accordion">Tailor-made tours</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="" class="header-contact"></a>
+                        <a href="" class="header-contact">+84 987 246 600 (Whatsapp)</a>
+                        <a href="" class="header-contact">info@vietnamtours.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="insider-guide">
+            <div class="section-insider-guide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8 tab-insider">
+                            <div class="holder-heading tab-1 current">
+                                <h1 class="title-insider">The Insider Guide</h1>
+                                <p class="desc-light">Travel like a local with our Insider Guide featuring reviews, news, and what is happening in Vietnam.</p>
+                            </div>
+                            <div class="holder-heading tab-2">
+                                <h1 class="title-insider">Sleep - The Insider Guide</h1>
+                                <p class="desc-light">Travel like a local with our Insider Guide featuring reviews, news, and what is happening in Vietnam.</p>
+                            </div>
+                            <div class="holder-heading tab-3">
+                                <h1 class="title-insider">Culture & History - The Insider Guide</h1>
+                                <p class="desc-light">Travel like a local with our Insider Guide featuring reviews, news, and what is happening in Vietnam.</p>
+                            </div>
+                            <div class="holder-heading tab-4">
+                                <h1 class="title-insider">Travel Tips - The Insider Guide</h1>
+                                <p class="desc-light">Travel like a local with our Insider Guide featuring reviews, news, and what is happening in Vietnam.</p>
+                            </div>
+                            <div class="holder-heading tab-5">
+                                <h1 class="title-insider">Local Guides - The Insider Guide</h1>
+                                <p class="desc-light">Travel like a local with our Insider Guide featuring reviews, news, and what is happening in Vietnam.</p>
+                            </div>
+                            <div class="holder-heading tab-6">
+                                <h1 class="title-insider">Things to Do - The Insider Guide</h1>
+                                <p class="desc-light">Travel like a local with our Insider Guide featuring reviews, news, and what is happening in Vietnam.</p>
+                            </div>
+                            <div class="holder-heading tab-7">
+                                <h1 class="title-insider">Foods & Drinks - The Insider Guide</h1>
+                                <p class="desc-light">Travel like a local with our Insider Guide featuring reviews, news, and what is happening in Vietnam.</p>
+                            </div>
+                            <div>
+                                <div class="holder-tab-list">
+                                    <div class="holder-tab-title">
+                                        <a class="tab-title current" data-tab="tab-1" href="">All Articles</a>
+                                        <a class="tab-title" data-tab="tab-2" href="">Sleep</a>
+                                        <a class="tab-title" data-tab="tab-3" href="">Culture & History</a>
+                                        <a class="tab-title" data-tab="tab-4" href="">Travel Tips</a>
+                                        <a class="tab-title" data-tab="tab-5" href="">Local Guides</a>
+                                        <a class="tab-title" data-tab="tab-6" href="">Things to Do</a>
+                                        <a class="tab-title" data-tab="tab-7" href="">Foods & Drinks</a>
+                                    </div>
+                                </div>
+                                <div class="holder-panels">
+                                    <div class="row holder-item tab-1 current">
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">5 Best Cruises Which Stop in Vietnam</h4>
+                                                <p class="excerpt">For travelers who like a combination of cosmopolitan cities, exotic landscapes and colonial history, Asia makes a compelling alternative to the more laid-back sun and sea cruise destinations.</p>
+                                                <p class="date">June 15, 2019</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">Vietnam's 7 Most Elite Golf Courses</h4>
+                                                <p class="excerpt">With more than 35 fully operational golf courses, some of which were designed by famed golf course designers such as Greg Norman, Colin Montgomerie and Luke Donald, and around 65 more courses planned for the next 5 years, it’s safe to say that Vietnam should also be up for consideration if one’s intention is to explore the Asian golf tour scenes.</p>
+                                                <p class="date">June 15, 2019</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">The 6 BEST National Parks in Vietnam</h4>
+                                                <p class="excerpt">Vietnam is a country of tropical lowlands, and densely forested highlands, pristine beaches and rolling hills.  </p>
+                                                <p class="date">June 15, 2019</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">Forget the Jet: Vietnam’s Five MOST Awestruck Motorbike Routes</h4>
+                                                <p class="excerpt">Vietnam’s iconic rice terraces, water buffalo, ancient pagodas and magnificent valleys have been immortalized in countless war movies and modern literature.</p>
+                                                <p class="date">June 15, 2019</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">8 Best Luxury Resorts in Vietnam</h4>
+                                                <p class="excerpt">From private pools to personal golf courses to entire European villages perched on the tropical shore, we’ve scouted the eight best luxury resorts that Vietnam has to offer, so you don’t have to!</p>
+                                                <p class="date">June 15, 2019</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row holder-item tab-2">
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">Oops! No Guides Found</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row holder-item tab-3">
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">Oops! No Guides Found</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row holder-item tab-4">
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">Forget the Jet: Vietnam’s Five MOST Awestruck Motorbike Routes</h4>
+                                                <p class="excerpt">Vietnam’s iconic rice terraces, water buffalo, ancient pagodas and magnificent valleys have been immortalized in countless war movies and modern literature.</p>
+                                                <p class="date">June 15, 2019</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row holder-item tab-5">
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">Oops! No Guides Found</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row holder-item tab-6">
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">5 Best Cruises Which Stop in Vietnam</h4>
+                                                <p class="excerpt">For travelers who like a combination of cosmopolitan cities, exotic landscapes and colonial history, Asia makes a compelling alternative to the more laid-back sun and sea cruise destinations.</p>
+                                                <p class="date">June 15, 2019</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">Vietnam's 7 Most Elite Golf Courses</h4>
+                                                <p class="excerpt">With more than 35 fully operational golf courses, some of which were designed by famed golf course designers such as Greg Norman, Colin Montgomerie and Luke Donald, and around 65 more courses planned for the next 5 years, it’s safe to say that Vietnam should also be up for consideration if one’s intention is to explore the Asian golf tour scenes.</p>
+                                                <p class="date">June 15, 2019</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">The 6 BEST National Parks in Vietnam</h4>
+                                                <p class="excerpt">Vietnam is a country of tropical lowlands, and densely forested highlands, pristine beaches and rolling hills.  </p>
+                                                <p class="date">June 15, 2019</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row holder-item tab-7">
+                                        <div class="col-12">
+                                            <a href="" class="item">
+                                                <h4 class="title">Oops! No Guides Found</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 sidebar">
+                            <div class="section section-help">
+                                <h5 class="sidebar-section-heading">
+                                    Meet Our Experts
+                                </h5>
+                                <div class="content">
+                                    <div class="holder-img">
+                                        <img src="./images/img-team2.png" alt="">
+                                    </div>
+                                    <p>Need to create your own Vietnam Trip?</p>
+                                    <p>
+                                        Call us now 
+                                        <a href="">+84 987 246 600</a>
+                                    </p>
+                                    <a href="" class="btn btn-primary-outline">Customize your tour</a>
+                                </div>
+                            </div>
+                            <div class="section section-suggested">
+                                <h5 class="sidebar-section-heading">
+                                    Suggested Tour Packages
+                                </h5>
+                                <div class="suggested-list">
+                                    <div class="suggested">
+                                        <a href="">
+                                            <div class="suggested-image" style="background-image: url(./images/hue_banner2.jpg) ;"></div>
+                                            <div class="suggested-info">
+                                                <h5 class="suggested-title">
+                                                    Hue Essential Tour In 2 Days
+                                                    <span class="price">from $ 85 pp</span>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="suggested">
+                                        <a href="">
+                                            <div class="suggested-image" style="background-image: url(./images/the-cultural-heritage-trails.jpg) ;"></div>
+                                            <div class="suggested-info">
+                                                <h5 class="suggested-title">
+                                                    The Cultural Heritage Trails (9 Days 8 Nights)
+                                                    <span class="price">from $678pp</span>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="suggested">
+                                        <a href="">
+                                            <div class="suggested-image" style="background-image: url(./images/hanoi_banner4.jpg) ;"></div>
+                                            <div class="suggested-info">
+                                                <h5 class="suggested-title">
+                                                    Hanoi - The Hidden Charm (3 Days 2 Nights) 
+                                                    <span class="price">from $144pp</span>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="suggested">
+                                        <a href="">
+                                            <div class="suggested-image" style="background-image: url(./images/fascinatingmekong-delta2d1n.jpg) ;"></div>
+                                            <div class="suggested-info">
+                                                <h5 class="suggested-title">
+                                                    Fascinating Mekong Delta (2 Days 1 Night)
+                                                    <span class="price">from $135pp</span>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="suggested">
+                                        <a href="">
+                                            <div class="suggested-image" style="background-image: url(./images/hue_banner2.jpg) ;"></div>
+                                            <div class="suggested-info">
+                                                <h5 class="suggested-title">
+                                                    Hue Essential Tour In 2 Days
+                                                    <span class="price">from $ 85 pp</span>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section section-why">
+                                <h5 class="sidebar-section-heading">Why VietnamTours?</h5>
+                                <ul class="list-why">
+                                    <li>All of our tours are fully customizable. Design your own tours.</li>
+                                    <li>Experienced local guides with a great passion for travel and culture.</li>
+                                    <li>Hand-picked hotels and partner for your best experience.</li>
+                                    <li>Our support teams are honest and prompt whenever you need.</li>
+                                </ul>
+                            </div>
+                            <div class="section section-tripadvisor">
+                                <div class="holder-img">
+                                    <img src="./images/logo-tripadvisor-big.svg" alt="">
+                                </div>
+                                <p>A trusted travel agency with over 10 years of experience, Vietnam Tours seeks to create an extraordinary experience for our guests, with each journey unique on its own.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="section-book">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 title="heading">Why book with us?</h2>
+                            <p class="desc">Vietnam Tours offer a wide range of travel options for 
+                                all travel needs: family holiday, honeymoon package, school trip or
+                                 solo travellers. We are proud to be among the leading travel 
+                                 agents in Vietnam and have been recommended extensively by both 
+                                 local and foreign visitors. </p>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="" class="btn btn-primary-outline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-links">
+                    <div class="row">
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">Destinations</h4>
+                            <ul class="footer-links">
+                                <li><a href="">Hanoi</a></li>
+                                <li><a href="">Sapa</a></li>
+                                <li><a href="">Ho Chi Minh City</a></li>
+                                <li><a href="">Hoi An</a></li>
+                                <li><a href="">Nha Trang</a></li>
+                                <li><a href="">Phu Quoc</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">Tour Styles</h4>
+                            <ul class="footer-links">
+                                <li><a href="">Classic Tours</a></li>
+                                <li><a href="">Family Tours</a></li>
+                                <li><a href="">Multi-Country Tours</a></li>
+                                <li><a href="">Luxury Tours</a></li>
+                                <li><a href="">Beach Escapes</a></li>
+                                <li><a href="">Mekong Delta Tours</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">General Information</h4>
+                            <ul class="footer-links">
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="./faq.html">FAQs</a></li>
+                                <li><a href="">Insider Guide</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">Have a Question?</h4>
+                            <div class="contact-info">
+                                <a href="" class="number">+84 987 246 600</a>
+                                <p class="time">(8.00 AM-22.00 PM, GMT +7)</p>
+                                <div class="get-quote">
+                                    <p>Our travel experts are ready to create a free customized itinerary.</p>
+                                    <a href="" class="btn-primary">GET A FREE QUOTE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="info">
+                            <p>Company: Mia Tours Company Limited . Business License: 0109891474, Date of Issue: 18/01/2022. Place of Issue: Hanoi Authority for Planning and Investment.</p>
+                            <p>Phone:  +84 987 246 600 / Fax: +84-43577-2908 </p>
+                            <p>Address: 6/34 Hao Nam, O Cho Dua, Dong Da District, Ha Noi, Viet Nam</p>
+                        </div>
+                        <p class="copyright-text">Copyright © 2023 VietnamTours.com. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="footer-logos">
+                            <li class="d-block">
+                                <img src="./images/footer1.svg" alt="">
+                            </li>
+                            <li class="d-block">
+                                <img src="./images/footer2.svg" alt="">
+                            </li>
+                            <li class="d-block">
+                                <img src="./images/footer3.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./slick/jquery-3.7.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/insider-guide.js"></script>
+</body>
+</html>

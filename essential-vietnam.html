@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/essential-vietnam.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <title>Essential</title>
+</head>
+<body>
+    <header>
+        <div class="unbordered">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-top">
+                        <div class="col-auto">
+                            <a class="header-contact" href="">+84 987 246 600 (Whatsapp)</a>
+                            <a class="header-contact" href="">info@vietnamtours.com</a>
+                        </div>
+                    </div>
+                    <div class="row header-bottom">
+                        <a href="./search.html" class="btn-toggler-search"><span class="fa fa-search"></span></a>
+                        <div class="col-auto">
+                            <a class="logo active" href="./index.html">
+                                <svg class="icon-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.812 32"><path fill="#a50b6b" d="M436.909,63.006s-0.972,1.8-2.335,4.424a29.384,29.384,0,0,1,4.231-.719c-1.7.455-3.233,0.941-4.6,1.438-0.364.705-.751,1.459-1.15,2.245a33.406,33.406,0,0,1,7.052-1.5,49.34,49.34,0,0,0-7.644,2.672c-0.387.77-.782,1.562-1.175,2.361a35.49,35.49,0,0,1,10.31-2.712,41.893,41.893,0,0,0-11.2,4.547c-0.381.791-.754,1.58-1.113,2.353A42.158,42.158,0,0,1,442.944,73.4c-8.874,2.765-13.15,5.927-15.021,7.737-0.382.888-.716,1.713-1,2.469a15.994,15.994,0,1,1,29.9-9.85C451.332,69.911,436.909,63.006,436.909,63.006Zm4.019,14.122c7.749-2.755,14.652-3.2,15.417-1s-5.064,5.9-12.813,8.654c-6.151,2.187-11.65,3.117-14.045,2.308a16,16,0,0,1-1.262-1.49C428.35,83.33,433.735,79.685,440.928,77.128Zm3.166,9.064c5.37-1.909,9.867-4.335,12.47-6.534a15.966,15.966,0,0,1-24.915,9.308A46.016,46.016,0,0,0,444.094,86.191Z" transform="translate(-425 -60)"></path></svg>
+                                <svg class="text-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.312 13.938"><path fill="#333" fill-rule="evenodd" d="M465,68.4L469.952,81h2.934l5.006-12.6h-2.935L471.5,77.9,468.061,68.4H465Zm15.787-1.224a1.387,1.387,0,1,0,1.35,1.387A1.315,1.315,0,0,0,480.787,67.172ZM479.4,71.313V81h2.773V71.313H479.4Zm10.136,7.634a2.422,2.422,0,0,1-2.305-1.495l6.7-1.764a4.393,4.393,0,0,0-4.771-4.465,4.692,4.692,0,0,0-4.97,4.951c0,2.953,2.071,4.933,5.15,4.933a5.487,5.487,0,0,0,4.357-1.98l-1.584-1.441A3.447,3.447,0,0,1,489.536,78.948ZM489.3,73.275a1.841,1.841,0,0,1,1.908,1.369L486.961,75.8C487.051,74.158,487.933,73.275,489.3,73.275Zm11.286,5.15a2.643,2.643,0,0,1-1.243.36c-0.612,0-.99-0.414-0.99-1.332V73.672H501V71.745h-2.647V69.08H495.6v8.84a2.941,2.941,0,0,0,3.1,3.205,5.113,5.113,0,0,0,2.467-.666Zm8.55-7.22a3.616,3.616,0,0,0-3.349,1.8V71.313h-2.773V81h2.773V76.229A2.243,2.243,0,0,1,508,73.744a1.8,1.8,0,0,1,1.908,1.98V81h2.773V74.914A3.391,3.391,0,0,0,509.138,71.205Zm12.906,0.108v1.4a3.675,3.675,0,0,0-3.132-1.513c-2.7.018-4.484,1.98-4.484,4.916,0,2.989,1.819,4.987,4.574,4.987a3.584,3.584,0,0,0,3.042-1.494V81H524.8V71.313h-2.755Zm-2.394,7.562a2.694,2.694,0,0,1,0-5.366,2.407,2.407,0,0,1,2.394,2.359v0.648A2.407,2.407,0,0,1,519.65,78.875Zm20.828-7.67a3.541,3.541,0,0,0-3.493,2.233,3.219,3.219,0,0,0-3.277-2.233,3.578,3.578,0,0,0-3.277,1.783V71.313h-2.773V81h2.773V76.211a2.218,2.218,0,0,1,2.161-2.467,1.776,1.776,0,0,1,1.854,1.98V81H537.2V76.211a2.215,2.215,0,0,1,2.143-2.467,1.781,1.781,0,0,1,1.872,1.98V81h2.755V74.914C543.971,72.646,542.621,71.205,540.478,71.205Zm7.214-2.809v2.412h3.835V81h2.845V70.809h3.853V68.4H547.692Zm16.562,2.827c-3.115,0-5.2,1.962-5.2,4.934,0,2.952,2.089,4.951,5.2,4.951,3.1,0,5.185-2,5.185-4.951C569.439,73.185,567.351,71.223,564.254,71.223Zm0,2.3a2.676,2.676,0,1,1-2.431,2.665A2.428,2.428,0,0,1,564.254,73.528ZM577.9,71.313V76.1a2.215,2.215,0,0,1-2.142,2.467,1.753,1.753,0,0,1-1.819-1.963V71.313h-2.773V77.4c0,2.287,1.351,3.709,3.493,3.709A3.434,3.434,0,0,0,577.9,79.29V81h2.755V71.313H577.9Zm8.387,1.746V71.313h-2.773V81h2.773V76.337c0-1.639,1.225-2.7,3.205-2.521V71.205A3.525,3.525,0,0,0,586.285,73.06Zm11,1.1,0.954-1.89a7.221,7.221,0,0,0-3.781-1.081c-2.106,0-3.817,1.027-3.817,3.025,0,3.4,5.024,2.575,5.024,4.123,0,0.522-.522.756-1.225,0.756a5.842,5.842,0,0,1-3.367-1.207l-0.9,1.873a6.764,6.764,0,0,0,4.195,1.35c2.2,0,3.944-1.044,3.944-3.025,0.017-3.421-5.1-2.683-5.1-4.141,0-.5.468-0.72,1.116-0.72A6.544,6.544,0,0,1,597.284,74.158Z" transform="translate(-465 -67.188)"></path></svg>
+                            </a>
+                        </div>
+                        <div class="col-auto dropdown-links">
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        DESTINATIONS
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./hanoi.html" >Hanoi</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Halong Bay</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Nha Trang</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Ho Chi Minh City</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Da Nang</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Phu Quoc</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Hoi An</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./destinations.html" >View all</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        TRAVEL STYLES
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./beachescapes.html" >Beach Escapes</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Classic Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Family Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Luxury Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Day Trips</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Multi-Country Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Short Tours - Northern</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Short Tours - Central</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Short Tours - Southern</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Mekong Delta Tours</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./destinations.html" >View all</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        CRUISES
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./halongbay.html" >Halong Bay Cruises</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="" >Mekong River Cruises</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./destinations.html" >View all</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        <a href="./insider-guide.html" class="hovering">INSIDER GUIDE</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <span class="dropdown-label">
+                                        MORE
+                                        <span class="fas fa-angle-down"></span>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./Suggested.html" >Suggested Itineraries</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./promises.html" >Who We Are</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./contact.html" >Contact Us</a>
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-link" href="./customize-tours.html" >Tailor-made tours</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto header-search">
+                            <a href="./my_try.html" class="label-search">My Trips</a>
+                            <form action="" class="form-header-search">
+                                <input type="text" name="trips" id="header-input-search " placeholder="Search" class="input-search">
+                                <a href="" class="btn-search" id="header-btn-search" >
+                                    <span class="fas fa-search"></span>
+                                </a>
+                            </form>
+                        </div>
+                        <div class="btn-toggler-menu">
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="holder-offcanvas">
+                    <div class="offcanvas">
+                        <ul class="holder-accordion">
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    destinations
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Hanoi</a></li>
+                                    <li><a href="" class="link-accordion">Halong Bay</a></li>
+                                    <li><a href="" class="link-accordion">Nha Trang</a></li>
+                                    <li><a href="" class="link-accordion">Ho Chi Minh City</a></li>
+                                    <li><a href="" class="link-accordion">Da Nang</a></li>
+                                    <li><a href="" class="link-accordion">Phu Quoc</a></li>
+                                    <li><a href="" class="link-accordion">Hoi An</a></li>
+                                    <li><a href="" class="link-accordion">View all</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    travel styles
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Beach Escapes</a></li>
+                                    <li><a href="" class="link-accordion">Classic Tours/a></li>
+                                    <li><a href="" class="link-accordion">Family Tours</a></li>
+                                    <li><a href="" class="link-accordion">Luxury Tours</a></li>
+                                    <li><a href="" class="link-accordion">Day Trips</a></li>
+                                    <li><a href="" class="link-accordion">Multi-Country Tours</a></li>
+                                    <li><a href="" class="link-accordion">Short Tours - Northern</a></li>
+                                    <li><a href="" class="link-accordion">Short Tours - Central</a></li>
+                                    <li><a href="" class="link-accordion">Short Tours - Southern</a></li>
+                                    <li><a href="" class="link-accordion">Mekong Delta Tours</a></li>
+                                    <li><a href="" class="link-accordion">View All</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    cruises
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Halong Bay Cruises</a></li>
+                                    <li><a href="" class="link-accordion">Mekong River Cruises</a></li>
+                                    <li><a href="" class="link-accordion">View all</a></li>
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <a href="">insider guide</a>
+                            </li>
+                            <li class="accordion">
+                                <p class="label-accordion">
+                                    more
+                                    <span class="fas fa-angle-down"></span>
+                                </p>
+                                <ul class="content-accordion">
+                                    <li><a href="" class="link-accordion">Suggested Itineraries</a></li>
+                                    <li><a href="" class="link-accordion">Who We Are</a></li>
+                                    <li><a href="" class="link-accordion">Contact Us</a></li>
+                                    <li><a href="" class="link-accordion">Tailor-made tours</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="" class="header-contact"></a>
+                        <a href="" class="header-contact">+84 987 246 600 (Whatsapp)</a>
+                        <a href="" class="header-contact">info@vietnamtours.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="tours-details">
+            <div class="section-banner banner-tours-details" style="background-image: url(./images/essentialvietnam–17d16n.jpg);"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 col-lg-8 holder-content">
+                        <ul class="holder-breadcrumbs">
+                            <li class="list-breadcrumbs">
+                                <a href="" class="link-breadcrumbs active">tours</a>
+                            </li>
+                            <li class="list-breadcrumbs">
+                                <a href="" class="link-breadcrumbs">Classic Tours</a>
+                            </li>
+                        </ul>
+                        <h1 class="title" itemprop="name">Essential Vietnam  (17 Days / 16 Nights)</h1>
+                        <div class="holder-destinations">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <ul class="destinations">
+                                <li class="destination">Hanoi</li>
+                                <li class="destination">Halong</li>
+                                <li class="destination">Hue</li>
+                                <li class="destination">Hoian</li>
+                                <li class="destination">Saigon</li>
+                                <li class="destination">Cu Chi</li>
+                                <li class="destination">Mekong Delta</li>
+                                <li class="destination">Dalat</li>
+                                <li class="destination">Mui Ne</li>
+                            </ul>
+                        </div>
+                        <div class="holder-rating">
+                            <div class="star-ratings">
+                                <div class="star-container">
+                                    <svg viewBox="0 0 51 48" class="widget-svg" style="width: 19px;height: 19px;transition: transform 0.2s ease-in-out 0s;"><path class="star" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" style="fill: rgb(232, 232, 232); transition: fill 0.2s ease-in-out 0s;"></path></svg>
+                                </div>
+                                <div class="star-container">
+                                    <svg viewBox="0 0 51 48" class="widget-svg" style="width: 19px;height: 19px;transition: transform 0.2s ease-in-out 0s;"><path class="star" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" style="fill: rgb(232, 232, 232); transition: fill 0.2s ease-in-out 0s;"></path></svg>
+                                </div>
+                                <div class="star-container">
+                                    <svg viewBox="0 0 51 48" class="widget-svg" style="width: 19px;height: 19px;transition: transform 0.2s ease-in-out 0s;"><path class="star" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" style="fill: rgb(232, 232, 232); transition: fill 0.2s ease-in-out 0s;"></path></svg>
+                                </div>
+                                <div class="star-container">
+                                    <svg viewBox="0 0 51 48" class="widget-svg" style="width: 19px;height: 19px;transition: transform 0.2s ease-in-out 0s;"><path class="star" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" style="fill: rgb(232, 232, 232); transition: fill 0.2s ease-in-out 0s;"></path></svg>
+                                </div>
+                                <div class="star-container">
+                                    <svg viewBox="0 0 51 48" class="widget-svg" style="width: 19px;height: 19px;transition: transform 0.2s ease-in-out 0s;"><path class="star" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" style="fill: rgb(232, 232, 232); transition: fill 0.2s ease-in-out 0s;"></path></svg>
+                                </div>
+                            </div>
+                            <span class="rating-info"> 0 review</span>
+                        </div>
+                        <div class="holder-info-tour bordered-top">
+                            <div class="info-tour">
+                                <div class="icon-holder">
+                                    <img src="./images/cart.svg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4 class="title-info">Tour type</h4>
+                                    <p class="value-info">Private</p>
+                                </div>
+                            </div>
+                            <div class="info-tour">
+                                <div class="icon-holder">
+                                    <img src="./images/clock.svg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4 class="title-info">Duration</h4>
+                                    <p class="value-info">17 Days 16 Nights</p>
+                                </div>
+                            </div>
+                            <div class="info-tour">
+                                <div class="icon-holder">
+                                    <img src="./images//Calendar.svg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4 class="title-info">Departure</h4>
+                                    <p class="value-info">Daily</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="holder-highlights bordered-top">
+                            <h2 class="title-content">
+                                Trip Highlights:
+                            </h2>
+                            <span itemprop="description">
+                                <div class="desc">
+                                    <p>You are uniquely given a chance to witness the fertile and lush flood plains of Mekong Delta and the splendor of Vietnam’s most renowned cities including Hanoi, Hue, Hoian and Saigon. The tour is also an exotic experience with generous views of the world’s famous natural wonder – Halong Bay.</p>
+                                    <ul>
+                                        <li>See the richness of Mekong Delta</li>
+                                        <li>Enjoy the splendor of Halong Bay and wonderful beach vacation in Mui Ne</li>
+                                        <li>Understand more about Vietnamese history with trip to Cu Chi Tunnels</li>
+                                    </ul>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="holder-itineraries bordered-top">
+                            <h2 class="title-content">Trip Itineraries:</h2>
+                            <ul class="itineraries">
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 1</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/hnc8.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Hanoi Arrival</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Arrive in Hanoi in the morning. You will be greeted by our driver and guide and then transferred to your hotel. The rest of the day is free to explore the city. Meals are on your own and overnight in Hanoi.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: Local English speaking guide </li>
+                                                                    <li>Meals: N/A</li>
+                                                                    <li>Accommodation: Hotel in Hanoi</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Arrive in Hanoi in the morning. You will be greeted by our driver and guide and then transferred to your ...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 2</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/hnc7.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Hanoi City Tour (B, L)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Start off your day with excursions around Hanoi charming capital. Your first stop is the Ho Chi Minh complex including Ba Dinh Square, Ho Chi Minh’s Mausoleum and One Pillar Pagoda. enjoy the ancient architecture of the Temple of Literature and after lunch, continue to visit the Opera House, Hoan Kiem Lake and the Old Quarter with the highlight of Dong Xuan Market. Finally, watch a Water Puppet Show before back to your hotel and enjoy dinner on your own. Overnight in Hanoi</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: Local English speaking guide</li>
+                                                                    <li>Meals: Breakfast, Lunch</li>
+                                                                    <li>Accommodation: Hotel in Hanoi</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Start off your day with excursions around Hanoi charming capital. Your first stop isthe Ho Chi Minh complex including Ba Dinh Square, Ho Chi Minh’s Mau...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 3</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/hlc6.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Hanoi – Halong – Overnight On Cruise (B, L, D)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Morning pick up and transfer to Halong Bay. Get on the cruise and enjoy great lunch as the cruise sails through thousands of beautiful island and islet with breathtaking views. Take time to visit Amazing Cave – the most beautiful cave in Halong for around 40mins. Back to the boat. Dinner and overnight onboard.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: Local English speaking guide on board</li>
+                                                                    <li>Meals: Breakfast, Lunch, Dinner</li>
+                                                                    <li>Accommodation: Overnight on board/private cabin on share-boat</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Morning pick up and transfer to Halong Bay. Get on the cruise and enjoy great lunchas the cruise sails through thousands of beautiful island and islet with b...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 4</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/hlc5.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Halong – Hanoi (B, L)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>After attending a Tai Chi session and enjoying great breakfast, we will take you to TiTop Island for a wonderful swim and stunning view of the bay. Back to the boat and check out the cabin. Relax and enjoy lunch while the cruise sails back to the pier. Disembark and transfer back to Hanoi. Dinner is on your own and overnight in Hanoi.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: Local English speaking guide on board</li>
+                                                                    <li>Meals: Breakfast, Lunch</li>
+                                                                    <li>Accommodation: Hotel in Hanoi</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>After attending a Tai Chi session and enjoying great breakfast, we will take you toTiTop Island for a wonderful swim and stunning view of the bay. Back to ...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 5</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/huec4.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Hanoi Flight to Hue – Hue City Tour (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Arrive in Hanoi in the morning. You will be greeted by our driver and guide and then transferred to your hotel. The rest of the day is free to explore the city. Meals are on your own and overnight in Hanoi.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle/ air-plane</li>
+                                                                    <li>Guide: Local English speaking guide</li>
+                                                                    <li>Meals: Breakfast</li>
+                                                                    <li>Accommodation: Hotel in Hue</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>This morning, take your flight to Hue and then join a half-day city tour to visit theAncient Citadel and Khai Dinh Tomb. Dinner is on your own and overnig...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 6</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/huec3.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Hue – Drive to Hoian (B, L)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>After breakfast, our driver will take you to Hoian. Free at the rest of the day to explore Hoian. Meals are on your own. Overnight in Hoian.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: N/A</li>
+                                                                    <li>Meals: Breakfast</li>
+                                                                    <li>Accommodation: Hotel in Hoian</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>After breakfast, our driver will take you to Hoian. Free at the rest of the day to exploreHoian. Meals are on your own. Overnight in Hoian.Transfer: Private mo...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 7</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/hac4.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Hoian – Tra Que Cooking Class (B, L)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Today, you will explore Hoian’s central market by bicycle and learn some ingredients for your next cooking class. Continue to cycle to Tra Que village where has many herb gardens from 300 years ago. Prepare to join a fun-filling cooking class with traditional dishes and enjoy it by yourself. Return to your hotel. Dinner is on your own and overnight in Hoian.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Bicycle</li>
+                                                                    <li>Guide: Local English speaking guide</li>
+                                                                    <li>Meals: Breakfast, Lunch</li>
+                                                                    <li>Accommodation: Hotel in Hoian</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Today, you will explore Hoian’s central market by bicycle and learn some ingredientsfor your next cooking class. Continue to cycle to Tra Que village where ...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 8</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/danang-free-day9.png);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Hoian – Danang – Fly to Ho Chi Minh City. Half Day City Tour (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>After breakfast, you will take a flight to Saigon and then spend time explore Saigon via our exciting half-day city tour. Sites included the Reunification Palace, Central Post office, Notre Dame Cathedral, and War Museum. Return to your hotel. Meals are on your own. Overnight in Saigon.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle/air- plane</li>
+                                                                    <li>Guide: Local English speaking guide </li>
+                                                                    <li>Meals: Breakfast</li>
+                                                                    <li>Accommodation: Hotel in Saigon</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>After breakfast, you will take a flight to Saigon and then spend time explore Saigonvia our exciting half-day city tour. Sites included the Reunification Palac...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 9</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/hcmc8.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Ho Chi Minh City – Cu Chi Tunnel Half Day – Ho Chi Minh City (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Today, you will spend half of the day to visit Cu Chi Tunnel which is 60km from Saigon. Upon arrival, a short documentary film will be displayed before exploring the Ben Dinh section of tunnel for the next couple of hours. Return to Saigon and free at the rest of the day. Meals are on your own and overnight in Saigon.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: Local English speaking guide</li>
+                                                                    <li>Meals: Breakfast</li>
+                                                                    <li>Accommodation: Hotel in Saigon</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Today, you will spend half of the day to visit Cu Chi Tunnel which is 60km fromSaigon. Upon arrival, a short documentary film will be displayed before ...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 10</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/hcmc7.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Ho Chi Minh City – Mekong Full Day – Ho Chi Minh City (B, L)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Morning transfer to Ben Tre. You will then join a boat trip to visit small brick factories, a coconut processing workshop and a local mat-weaving house. Try “xe loi” (motorized trishaw) for the first time. After lunch, we provide you a biking trip and then a sampan to travel along the picturesque canals. Back to visit Ben Tre local market and then return to Saigon. Dinner is on your own and overnight in Saigon.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: Local English speaking guide</li>
+                                                                    <li>Meals: Breakfast, Lunch</li>
+                                                                    <li>Accommodation: Hotel in Saigon</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Morning transfer to Ben Tre. You will then join a boat trip to visit small brick factories,a coconut processing workshop and a local mat-weaving house. Try “xe...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 11</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/dlc4.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Ho Chi Minh City – Flight to Dalat (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>In the morning, transfer to Dalat, the city of love. The whole afternoon is to admire the beauty of the city with visits to Truc Lam Zen Monastery - the largest Zen Monastery of Vietnam, Bao Dai Summer Palace and free night to explore Dalat’s night market. Meals are on your own. Overnight in Dalat.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle/air- plane</li>
+                                                                    <li>Guide: Local English speaking guide</li>
+                                                                    <li>Meals: Breakfast</li>
+                                                                    <li>Accommodation: Hotel in Dalat</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>In the morning, transfer to Dalat, the city of love. The whole afternoon is to admirethe beauty of the city with visits to Truc Lam Zen Monastery - the larges...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 12</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/dlc3.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Dalat Sightseeing (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Today, you will go sightseeing over Dalat’s major spots including Cam Ly waterfall, Nguyen Huu Hao temple, Van Thanh village and jungle forests. On the way, you will also visit Elephant Waterfall – the most natural and majestic waterfall in Lam Dong, Vegetable and Flower farms, Silk factory, Linh An pagoda with the big Happy Buddha and Tea and Coffee Plantations. The journey continues with a visit to Lam Dong Museum (Ethnic Minority Museum) and the Palace of Nam Phuong Queen. Meals are on your own and overnight in Dalat.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: Local English speaking guide</li>
+                                                                    <li>Meals: Breakfast</li>
+                                                                    <li>Accommodation: Hotel in Dalat</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Today, you will go sightseeing over Dalat’s major spots including Cam Ly waterfall,Nguyen Huu Hao temple, Van Thanh village and jungle forests. On the ...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 13</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/muine_1.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p Dalat class="desc">Dalat – Transfer to Mui Ne (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Have breakfast at the hotel then drive to Mui Ne by our driver. Arrive to Mui Ne, enjoy your free time in the busy city!</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: N/A </li>
+                                                                    <li>Meals: Breakfast</li>
+                                                                    <li>Accommodation: Hotel in Mui Ne</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Dalat – Transfer to Mui Ne (B)
+
+                                                                    Have breakfast at the hotel then drive to Mui Ne by our driver. Arrive to Mui Ne, enjoyyour free time in the busy city!Transfer: Private modern AC vehicle Guid...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 14</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/muine_2.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Mui Ne Free (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Today, you are free for beach vacation!Transfer: N/A Guide: N/A Meals:BreakfastAccommodation: Hotel in Mui Ne</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: Local English speaking guide </li>
+                                                                    <li>Meals: N/A</li>
+                                                                    <li>Accommodation: Hotel in Hanoi</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Today, you are free for beach vacation!Transfer: N/A Guide: N/A Meals:BreakfastAccommodation: Hotel in Mui Ne</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 15</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/muine.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Mui Ne Free (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>Today, you are free for beach vacation!Transfer: N/A Guide: N/A Meals:BreakfastAccommodation: Hotel in Mui Ne</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private modern AC vehicle</li>
+                                                                    <li>Guide: Local English speaking guide </li>
+                                                                    <li>Meals: N/A</li>
+                                                                    <li>Accommodation: Hotel in Hanoi</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>Today, you are free for beach vacation!Transfer: N/A Guide: N/A Meals:BreakfastAccommodation: Hotel in Mui Ne</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 16</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/hcmc_3.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Mui Ne – Ho Chi Minh City (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>After breakfast, transfer back to your hotel in Saigon city by our driver. You are free to have some last minutes shopping or explore more the city’s charm.</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private AC vehicle</li>
+                                                                    <li>Guide: N/A</li>
+                                                                    <li>Meals: Breakfast</li>
+                                                                    <li>Accommodation: Hotel in Saigon</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>After breakfast, transfer back to your hotel in Saigon city by our driver. You are free tohave some last minutes shopping or explore more the city’s charm.Tran...</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="itinerary">
+                                    <h3 class="title-itinerary">Day 17</h3>
+                                    <div class="details-itinerary">
+                                        <div class="img-itinerary" style="background-image: url(./images/hcmc_4.jpg);"></div>
+                                        <div class="info-itinerary">
+                                            <p class="desc">Ho Chi Minh City Departure (B)</p>
+                                            <div class="info-text">
+                                                <div>
+                                                    <span width="0">
+                                                        <span>
+                                                            <div class="info-text content-text">
+                                                                <p>After breakfast, catch your flight back to Saigon for your departure flight home.Bon Voyage!</p>
+                                                                <ul>
+                                                                    <li>Transfer: Private AC vehicle</li>
+                                                                    <li>Guide: N/A</li>
+                                                                    <li>Meals: Breakfast</li>
+                                                                    <li>Accommodation: N/A</li>
+                                                                </ul>
+                                                            </div>
+                                                            <span class="content-text-1">
+                                                                <span>After breakfast, catch your flight back to Saigon for your departure flight home.BonVoyage!Transfer: Private AC vehicleGuide: N/A Meals: BreakfastAccom..</span>
+                                                            </span>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" class="show-more">
+                                                                <span>SHOW MORE</span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="link-map">Click here to view trip map</a>
+                        <div class="holder-customize">
+                            <p>This program is not exactly what you're looking for?</p>
+                            <a class="btn btn-brand">Customize this program</a>
+                        </div>
+                        <div class="holder-list list-inclusion">
+                            <h2 class="title-content">Inclusions:</h2>
+                            <ul class="inclusions">
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    Private air-conditioned vehicle round trip transfer
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    Private Local English speaking guide
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    Local English speaking guide on board for Halong Bay tour
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    Entrance fees and sightseeing fees
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    01 bottled mineral water per person per day
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    Meals as mentioned in the detail program (B: Breakfast, L: Lunch, D: Dinner)
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    Boat trip in Halong
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    Boat trip in Mekong river
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    Hotel accommodation as in the detail or similar
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-check"></span>
+                                    Accommodation shared in Double room with daily breakfast
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="holder-list list-exclusions bordered-top">
+                            <h2 class="title-content">Exclusions:</h2>
+                            <ul class="exclusions">
+                                <li class="list">
+                                    <span class="fas fa-times"></span>
+                                    Visa to Vietnam
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-times"></span>
+                                    Personal expenses
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-times"></span>
+                                    Drinks & beverages
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-times"></span>
+                                    International flight to/from Vietnam & Domestic flight tickets in Vietnam
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-times"></span>
+                                    Tips & travel insurance
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-times"></span>
+                                    Peak season or Public holidays surcharge if any
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-times"></span>
+                                    Compulsory Gala dinner on X-Mas or New Year if any
+                                </li>
+                                <li class="list">
+                                    <span class="fas fa-times"></span>
+                                    All other services not clearly mentioned above
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="holder-when bordered-top">
+                            <h2 class="title-content">When to go:</h2>
+                            <div class="month" data-val="April">April</div>
+                            <div class="month" data-val="August">August</div>
+                            <div class="month" data-val="December">December</div>
+                            <div class="month" data-val="February">February</div>
+                            <div class="month" data-val="January">January</div>
+                            <div class="month" data-val="July">July</div>
+                            <div class="month" data-val="June">June</div>
+                            <div class="month" data-val="March">March</div>
+                            <div class="month" data-val="May">May</div>
+                            <div class="month" data-val="November">November</div>
+                            <div class="month" data-val="October">October</div>
+                            <div class="month" data-val="September">September</div>
+                        </div>
+                        <div class="holder-answers bordered-top">
+                            <h2 class="title-content">Questions & Answers</h2>
+                            <div class="answers">
+                                <p class="answer">Be the first to ask a question.</p>
+                            </div>
+                            <button class="btn btn-default btn-ask-question"> 
+                                <span class="img"> 
+                                    <img src="./images/message.svg" alt="">
+                                </span>
+                                <span class="text">Ask a question</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 holder-content">
+                        <div class="holder-more-tours bordered-top">
+                            <h2 class="title-content">More tours you may like</h2>
+                            <div class="holder-panels">
+                                <div class="row holder-media react-tabs__tab-panel--selected" id="react-tabs-6" >
+                                    <div class="col-sm-auto col-md-4 media">
+                                        <div class="media-img" style="background-image: url(./images/vn-laos.jpg);">  
+                                            <div class="add-trip">
+                                                <span class="fas fa-heart"></span>
+                                                <div class="media-add-trip">
+                                                    Add to my trips
+                                                    <span class="far fa-heart"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-details content-shadowed">
+                                            <h3 class="subtitle-banner">
+                                                <a href="">Vietnam & Laos – A Brief Tour (10 Days 9 Nights)
+                                                    <span class="highlight">
+                                                        from $827pp
+                                                    </span>
+                                                </a>
+                                            </h3>
+                                            <p class="date">10 Days 9 Nights</p>
+                                            <p class="desc-light">Delve deeply into the essence of Indochina as you travel through a lot of spectacular</p>
+                                            <a href="" class="read-more">
+                                                READ MORE
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-auto col-md-4 media">
+                                        <div class="media-img" style="background-image: url(./images/hcm-dalat5d4n.jpg)">
+                                            <div class="add-trip">
+                                                <span class="fas fa-heart"></span>
+                                                <div class="media-add-trip">
+                                                    Add to my trips
+                                                    <span class="far fa-heart"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-details content-shadowed">
+                                            <h3 class="subtitle-banner">
+                                                <a href="">Ho Chi Minh City – Da Lat, From River Delta to Mountain Highland (5 Days 4 Nights)
+                                                    <span class="highlight">
+                                                        from $215pp
+                                                    </span>
+                                                </a>
+                                            </h3>
+                                            <p class="date">5 Days 4 Nights</p>
+                                            <p class="desc-light">Discover colonial architecture of the never-sleep Saigon</p>
+                                            <a href="" class="read-more">
+                                                READ MORE
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-auto col-md-4 media">
+                                         <div class="media-img" style="background-image: url(./images/vietnamindepth14d13n.jpg)">
+                                            <div class="add-trip">
+                                                <span class="fas fa-heart"></span>
+                                                <div class="media-add-trip">
+                                                    Add to my trips
+                                                    <span class="far fa-heart"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-details content-shadowed">
+                                            <h3 class="subtitle-banner">
+                                                <a href="">Vietnam In Depth (14 Days 13 Nights)
+                                                    <span class="highlight">
+                                                        from $976pp
+                                                    </span>
+                                                </a>
+                                            </h3>
+                                            <p class="date">14 Days 13 Nights</p>
+                                            <p class="desc-light">Be convinced by the authentic scenery, culture and history</p>
+                                            <a href="" class="read-more">
+                                                READ MORE
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 sidebar">
+                        <div class="section section-request">
+                            <h5 class="sidebar-section-heading minPrice">
+                                <span>
+                                From 
+                                <span class="bolded">$1008</span>    
+                                / per person
+                                </span>
+                            </h5>
+                            <div class="content">
+                                <form class="form-request">
+                                    <div class="holder-select">
+                                        <select name="guest">
+                                            <option value="2880-1">1 Guest</option>
+                                            <option value="1623-2">2 Guests</option>
+                                            <option value="1345-3">3 Guests</option>
+                                            <option value="1147-4">4 Guests</option>
+                                            <option value="1008-5">5 Guests</option>
+                                            <option value="1008-6">6 Guests</option>
+                                            <option value="1008-7">7 Guests</option>
+                                            <option value="1008-8">8 Guests</option>
+                                            <option value="1008-9">9 Guests</option>
+                                            <option value="1008-10">10 Guests</option>
+                                        </select>
+                                        <img src="./images/icon-arrow-down-sm.68e8126e.png" class="arrow" alt="">
+                                    </div>
+                                    <div class="custom-datepicker">
+                                        <div>
+                                            <div class="react-datepicker-wrapper">
+                                                <div class="react-datepicker__input-container">
+                                                    <div class="btn btn-datepicker">
+                                                        January 29, 2024
+                                                        <img src="./images/icon-sidebar.svg" class="icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="holder-total">
+                                        <span class="label-total">Total (USD)</span>
+                                        <span class="value-total">
+                                            $2880
+                                        </span>
+                                    </div>
+                                    <a href="" class="btn btn-brand">
+                                        REQUEST THIS TOUR
+                                    </a>
+                                    <p class="disclaimer">
+                                        We often respond to any requests within 2-4 hours
+                                    </p>
+                                    <button class="btn-gray">
+                                        <img src="./images//icon-heart-sm.9843eb51.png" alt="" class="icon">
+                                        Add to my trip
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="section section-help">
+                            <h5 class="sidebar-section-heading">
+                                Meet Our Experts
+                            </h5>
+                            <div class="content">
+                                <div class="holder-img">
+                                    <img src="./images/img-team2.png" alt="">
+                                </div>
+                                <p>Need to create your own Vietnam Trip?</p>
+                                <p>
+                                    Call us now 
+                                    <a href="">+84 987 246 600</a>
+                                </p>
+                                <a href="" class="btn">Customize your tour</a>
+                            </div>
+                        </div>
+                        <div class="section section-tripadvisor">
+                            <div class="holder-img">
+                                <img src="./images//logo-tripadvisor-big.svg" alt="">
+                            </div>
+                            <p>A trusted travel agency with over 10 years of experience, Vietnam Tours seeks to create an extraordinary experience for our guests, with each journey unique on its own.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="holder-modal hidden">
+                <div class="modal">
+                    <div class="modal-ask-questions"> 
+                        <h2 class="modal-title">
+                            Ask a question
+                        </h2>
+                        <button class="icon-close">
+                            <img src="./images/close.svg" alt="">
+                        </button>
+                        <form class="form-holder" name="tour-question">
+                            <div class="holder-flex">
+                                <div class="holder-item hidden">
+                                    <p class="text-label">Don’t fill this out if you're human:</p>
+                                    <input type="text" class="input-field" name="bot-field" placeholder="Bot Field">
+                                    <input type="text" name="title">
+                                </div>
+                                <div class="holder-item">
+                                    <label class="text-label text-bold">Name</label>
+                                    <input type="text" class="input-field input-text" name="name">
+                                </div>
+                                <div class="holder-item">
+                                    <label class="text-label text-bold">Email</label>
+                                    <input type="email" class="input-field input-text" name="email">
+                                </div>
+                            </div>
+                            <div class="holder-item">
+                                <textarea name="question" class="input-field input-message"></textarea>
+                                <p class="text">No more than 2,000 characters, please.</p>
+                            </div>
+                            <div class="holder-item holder-captcha">
+                                <div class="recaptcha">
+                                    <div>
+                                        <div style="width: 304px; height: 78px;">
+                                            <iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-txyvhhw359ra" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcfR6YUAAAAADqe_rP5O7HUG7k8ylxjXq2I7Btu&amp;co=aHR0cHM6Ly93d3cudmlldG5hbXRvdXJzLmNvbTo0NDM.&amp;hl=vi&amp;type=image&amp;v=QUpyTKFkX5CIV6EF8TFSWEif&amp;theme=light&amp;size=normal&amp;badge=bottomright&amp;cb=yq7iaqtl0ffy"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="holder-button">
+                                <button class="btn btn-brand" type="submit">SUBMIT YOUR QUESTION</button>
+
+                            </div>
+                            <p class="text text-small">Your name and email address will not be published on our website.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="section-book">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 title="heading">Why book with us?</h2>
+                            <p class="desc">Vietnam Tours offer a wide range of travel options for 
+                                all travel needs: family holiday, honeymoon package, school trip or
+                                 solo travellers. We are proud to be among the leading travel 
+                                 agents in Vietnam and have been recommended extensively by both 
+                                 local and foreign visitors. </p>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="" class="btn btn-primary-outline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-links">
+                    <div class="row">
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">Destinations</h4>
+                            <ul class="footer-links">
+                                <li><a href="">Hanoi</a></li>
+                                <li><a href="">Sapa</a></li>
+                                <li><a href="">Ho Chi Minh City</a></li>
+                                <li><a href="">Hoi An</a></li>
+                                <li><a href="">Nha Trang</a></li>
+                                <li><a href="">Phu Quoc</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">Tour Styles</h4>
+                            <ul class="footer-links">
+                                <li><a href="">Classic Tours</a></li>
+                                <li><a href="">Family Tours</a></li>
+                                <li><a href="">Multi-Country Tours</a></li>
+                                <li><a href="">Luxury Tours</a></li>
+                                <li><a href="">Beach Escapes</a></li>
+                                <li><a href="">Mekong Delta Tours</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">General Information</h4>
+                            <ul class="footer-links">
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="./faq.html">FAQs</a></li>
+                                <li><a href="">Insider Guide</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="content-footer col-12 col-sm-6 col-md-3">
+                            <h4 class="footer-links-heading">Have a Question?</h4>
+                            <div class="contact-info">
+                                <a href="" class="number">+84 987 246 600</a>
+                                <p class="time">(8.00 AM-22.00 PM, GMT +7)</p>
+                                <div class="get-quote">
+                                    <p>Our travel experts are ready to create a free customized itinerary.</p>
+                                    <a href="" class="btn-primary">GET A FREE QUOTE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="info">
+                            <p>Company: Mia Tours Company Limited . Business License: 0109891474, Date of Issue: 18/01/2022. Place of Issue: Hanoi Authority for Planning and Investment.</p>
+                            <p>Phone:  +84 987 246 600 / Fax: +84-43577-2908 </p>
+                            <p>Address: 6/34 Hao Nam, O Cho Dua, Dong Da District, Ha Noi, Viet Nam</p>
+                        </div>
+                        <p class="copyright-text">Copyright © 2023 VietnamTours.com. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="footer-logos">
+                            <li class="d-block">
+                                <img src="./images/footer1.svg" alt="">
+                            </li>
+                            <li class="d-block">
+                                <img src="./images/footer2.svg" alt="">
+                            </li>
+                            <li class="d-block">
+                                <img src="./images/footer3.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./slick/jquery-3.7.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/essential.js"></script>
+</body>
+</html>
